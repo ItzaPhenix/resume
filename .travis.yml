@@ -15,3 +15,6 @@ deploy:
   file: resume.pdf
   on:
     repo: ItzaPhenix/resume
+    tags: true
+    all_branches: true
+
