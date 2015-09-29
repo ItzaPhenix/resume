@@ -1,9 +1,10 @@
-sudo: true
+sudo: false
 addons:
   apt:
     packages:
     - texlive-full
 install:
+- PATH=/usr/local/texlive/2013/bin/x86_64-linux:$PATH
 - tlmgr install moderncv
 - tlmgr install moderntimeline
 script:
