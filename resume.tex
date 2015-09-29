@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\nopagenumbers{}
+%\usepackage[scale=0.80]{geometry}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{moderntimeline}
+\tlmaxdates{2011}{2016}
+
+\firstname{Guillaume}
+\familyname{Dupuis}
+\title{CS student at EPITA}
+\email{g.dupuis.tourniaire@gmail.com}
+%\homepage{stevebarrau.com}
+\mobile{+33 638~536~409}
+
+\quote{Passionnate computer scientist, mostly interested in system
+developpement, infrastructure and IOT}
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+\tlcventry{2014}{2016}{Teacher assistant in computer science}{EPITA}{}{}{
+\textbf{Teaching} Shell, C, C++, Java, SQL and design pattern to 300 students.}
+\tldatecventry{2014}{R&D student}{Thales C&S}{Paris}{}{Developed secure embedded
+systems with light virtualization for mobile device\\
+\textbf{Technologies used:} LXC, Android, Debian, debootstrap.}
+\tldatecventry{2013}{Electrician / service support}{AFP}{Paris}{}{Gave
+electrical service support for desk and datacenter for AFP (French press agency.\\
+\subsection{Scholar projects}
+\tldatecventry{2015}{STOS}{C/ASM}{}{x86 kernel intended to teach interuptions
+and memory management.}{}
+\tldatecventry{2014}{Malloc}{C}{}{Implementation of malloc of libc.}{}
+\tldatecventry{2014}{42sh}{C}{}{A posix shell in C done in course in teams of
+5. I mostly did the AST, arithmetic evaluation and \texttt{fnmatch()} all
+written from scratch}{}
+\subsection{Spare time projects}
+\tlcventry{2014}{0}{Student union}{}{}{}{Member of student union of EPITA}
+\tlcventry{2014}{0}{Linux server administration}{}{}{}{Installation, configuration and maintenance. Running services in containers.}
+
+\section{Formation}
+\tlcventry{2011}{2016}{CS Engineer}{EPITA}{French engineering school}{}{}
+\tldatecventry{2013}{Exchange}{Stafford University}{Stafford}{Computer science
+master}{}
+
+\section{Computer skills}
+\cvitem{OS}{Linux, Unix, Windows}
+\cvitem{Languages}{C, C++, C\#, Java, {Python}, shell, asm x86}
+\cvitem{Tools}{\textbf{Git}, project managment(MS Project), debootstrap, LXC, MySQL}
+
+\end{document}
