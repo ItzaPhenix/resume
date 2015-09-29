@@ -1,11 +1,10 @@
-sudo: sudo
-addons:
-  apt:
-    packages:
-    - texlive-full
+sudo: false
+before_install:
+- mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20150712/texlive.tar.xz | tar -JxC $HOME/texlive
 install:
-- sudo tlmgr install moderncv
-- sudo tlmgr install moderntimeline
+- PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+- tlmgr install moderncv
+- tlmgr install moderntimeline
 script:
 - make
 deploy:
