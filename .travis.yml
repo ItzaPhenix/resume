@@ -1,6 +1,7 @@
 sudo: false
 before_install:
-- mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20150712/texlive.tar.xz | tar -JxC $HOME/texlive
+- mkdir -p $HOME/texlive && curl -L https://github.com/urdh/texlive-blob/releases/download/20150712/texlive.tar.xz
+  | tar -JxC $HOME/texlive
 install:
 - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
 - tlmgr install moderncv
@@ -10,7 +11,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: kIBEIzw50IQOZ6hwpQ+0VemhNbCxe12m40VLgq75sxrkmF7vytLwuE5MGY0kwCIxvht16lqIwDvigrHS0vNt4GxDtr2s/TIxJp9R6HP06240H9VP8FrEGeodjArYcztT83Uzea0p7ORpm6vD64VtHec3jZ6uLww3ZvB79Wp96LCy6+esXyBq3Q8Lc3qbQy/6r5Gn1KFphY3q42NXeSEF0u9zY53dJmiSRLTMd1lTkQYDKxE/st86iBvADEjeQdBfc2sePpeQSPVroexwxVg+F1rUkGYtMKvGNJi6y5MNqh52kNiINbhY+dhZ+uQfgu1Zh1NDswF/ECK1+Xk8UocSSSSNbmmXAiAhun8yd9sy1n+EmsmIBUoutMI3bm4ys0gjKtxUNYhTE66AQ5/nKJVqL4QXJFPCqpPWwF0ZEWPJJVPtSIdrugAFlSGSWVjU1oKvHFu8ce7jD7n+eUb8+O6NF5tmqFaJUmGE60vNVpreLdCtfModRsB98kAey4v+rKCGOtq738akQDFKPUVwkFRYu2LG8QWXKwWfQ7OSclN5FdgAIebU8XPuzjg5HjUnm18E/QXwzhn67jlGvEE+ygwKx1uCnrPvvjlF/U3oxt/4zhD259A+4NDnL8oqR1SsdV4vXAuhbYg1lWq8A67WySPX9DbWf3VNdz7a8Bv7fwmHicw=
+    secure: Bly4GgbXT8c/9BGookNaLCG48EhH1rWpYwJzbJtPCGl6iTBe0FSm7EmpB9H03IAIc7skGQoRTsec/WgsbYU/o5Jl7sIrytOsritThe5rc1A3xUEo3tlts2DY1M2pYxIUDmQFtHFBzmvqmj+/1Th0tZj91uRBmC6Gr2tLZ1jXITdTZY4TpmfRgPd9aDsF1d8Kyzhltz3Kuu5dpyW/oi35yoXmqtFRcs0ue3X90xlH84Os4twJ09QBFjcCDme4jYC3VKxnKlULpQbVAhB3Lm5tG9iumAqkZRVCvaM++U4kyo39oehl+OGHgdNW665f2MZV+nQWu3y2PQsWWOvQNJnYcIXbSJtoiL8WreIwI1heKXdRTdnIaV53W2W35Gt/FwpXYm8F8b64SaAgtULcNq1+E8eN1MoElPo/5aPuW+yHZVNyynNS4uikHWZggwu/zbrm1oN6svB2dqMwdCl0bjgr79xxMnezzaOV9VrluhG0mFQXU347Wn/3YE+St+licGuihg9gVuQOyQSrlw3CRiGT7fHuPvvJe6RYLTJU+o5eVrP2Sp8tyrBwQiuT4ipmglqZ4C4weaJ2iywbXOlRTiQWJyoTXXBvgbX0+imjfLaUSxUfzd7UwmyI7xIT/qr/Z8hP7AqHlmhtLw1fwxXEK4T4lJk0cTW5eAi8URii48BFVZc=
   file: resume.pdf
   skip_cleanup: true
   on:
