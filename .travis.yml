@@ -1,0 +1,18 @@
+sudo: false
+addons:
+  apt:
+    packages:
+    - texlive-full
+install:
+- tlmgr install moderncv
+- tlmgr install moderntimeline
+script:
+- make
+deploy:
+  provider: releases
+  api_key:
+    secure: kIBEIzw50IQOZ6hwpQ+0VemhNbCxe12m40VLgq75sxrkmF7vytLwuE5MGY0kwCIxvht16lqIwDvigrHS0vNt4GxDtr2s/TIxJp9R6HP06240H9VP8FrEGeodjArYcztT83Uzea0p7ORpm6vD64VtHec3jZ6uLww3ZvB79Wp96LCy6+esXyBq3Q8Lc3qbQy/6r5Gn1KFphY3q42NXeSEF0u9zY53dJmiSRLTMd1lTkQYDKxE/st86iBvADEjeQdBfc2sePpeQSPVroexwxVg+F1rUkGYtMKvGNJi6y5MNqh52kNiINbhY+dhZ+uQfgu1Zh1NDswF/ECK1+Xk8UocSSSSNbmmXAiAhun8yd9sy1n+EmsmIBUoutMI3bm4ys0gjKtxUNYhTE66AQ5/nKJVqL4QXJFPCqpPWwF0ZEWPJJVPtSIdrugAFlSGSWVjU1oKvHFu8ce7jD7n+eUb8+O6NF5tmqFaJUmGE60vNVpreLdCtfModRsB98kAey4v+rKCGOtq738akQDFKPUVwkFRYu2LG8QWXKwWfQ7OSclN5FdgAIebU8XPuzjg5HjUnm18E/QXwzhn67jlGvEE+ygwKx1uCnrPvvjlF/U3oxt/4zhD259A+4NDnL8oqR1SsdV4vXAuhbYg1lWq8A67WySPX9DbWf3VNdz7a8Bv7fwmHicw=
+  file: resume.pdf
+  skip_cleanup: true
+  on:
+    branch: master

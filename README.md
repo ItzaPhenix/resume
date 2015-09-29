@@ -1,0 +1,7 @@
+[![Build
+Status](https://travis-ci.org/ItzaPhenix/resume.svg?branch=master)](https://travis-ci.org/ItzaPhenix/resume)
+
+My curriculum vitae in LaTeX.
+
+Make a pdf version using `make` or get it directly from the
+[release](https://github.com/itzaphenix/resume/releases/download/1.0/resume.pdf).
