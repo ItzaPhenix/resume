@@ -4,4 +4,4 @@ Status](https://travis-ci.org/ItzaPhenix/resume.svg?branch=master)](https://trav
 My curriculum vitae in LaTeX.
 
 Make a pdf version using `make` or get it directly from the
-[release](https://github.com/ItzaPhenix/resume/releases/download/v1.5.5/resume.pdf).
+[release](https://github.com/ItzaPhenix/resume/releases/download/v1.5.6/resume.pdf).
