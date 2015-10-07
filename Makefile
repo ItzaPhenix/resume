@@ -1,8 +1,10 @@
 LATEX = xelatex
 
-OUT = resume.pdf
+US = resume-inter.pdf
 
-all: $(OUT)
+FR = resume-fr.pdf
+
+all: $(US) $(FR)
 
 %.pdf: %.tex
 	$(LATEX) $<
