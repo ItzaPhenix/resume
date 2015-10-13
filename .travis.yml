@@ -15,6 +15,7 @@ deploy:
   file:
       - resume-inter.pdf
       - resume-fr.pdf
+      - resume-alter.pdf
   on:
     tags: true
 

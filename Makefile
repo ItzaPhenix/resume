@@ -4,7 +4,9 @@ US = resume-inter.pdf
 
 FR = resume-fr.pdf
 
-all: $(US) $(FR)
+ALTER = resume-alter.pdf
+
+all: $(US) $(FR) $(ALTER)
 
 %.pdf: %.tex
 	$(LATEX) $<
